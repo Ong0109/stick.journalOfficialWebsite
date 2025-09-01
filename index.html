@@ -12,6 +12,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Charm&family=League+Spartan:wght@100..900&family=Patua+One&family=Playpen+Sans:wght@100..800&" rel="stylesheet">
 </head>
 
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
 <body>
   <header>
     <div>
@@ -20,33 +27,33 @@
   </header>
 
   <section>
-    <h2>About Me</h2>
-    <p class= "detail" >Hello! Welcome to my official website! I'm Stick Journal, I like to create 2D/3D animations, games, and websites! </p>
+    <h2 data-aos="zoom-in">About Me</h2>
+    <p class= "detail" data-aos="fade-up">Hello! Welcome to my official website! I'm Stick Journal, I like to create 2D/3D animations, games, and websites! </p>
   </section>
 
   <section>
-    <h2>My Social Media</h2>
+    <h2 data-aos="zoom-in">My Social Media</h2>
     <div class="channel">
-      <p class= "detail">Hey! Why not follow me on social media too?</p>
+      <p class= "detail" data-aos="fade-up" >Hey! Why not follow me on social media too?</p>
       <div class = "arrange_left" >
 
-        <a href="https://www.facebook.com/stick.journal1011" target="_blank">
+        <a href="https://www.facebook.com/stick.journal1011" target="_blank" data-aos="flip-up">
           <img class="socialMedia" src="socialMedia01.png"  alt="facebookIcon">
           <p class= "detail" >My Facebook</p>
         </a>
 
-        <a href="https://www.instagram.com/stick.journal1011/" target="_blank">
+        <a href="https://www.instagram.com/stick.journal1011/" target="_blank" data-aos="flip-up">
           <img class="socialMedia" src="socialMedia02.png"  alt="instagramIcon">
           <p class= "detail" >My Instagram</p>
         </a>
        
 
-        <a href="https://www.youtube.com/@Stick.Journal1011" target="_blank">
+        <a href="https://www.youtube.com/@Stick.Journal1011" target="_blank" data-aos="flip-up">
           <img class="socialMedia" src="socialMedia03.png"  alt="youtubeIcon">
           <p class= "detail" >My Youtube</p>
         </a>
 
-        <a href="https://stickjournal.itch.io/" target="_blank">
+        <a href="https://stickjournal.itch.io/" target="_blank" data-aos="flip-up">
           <img class="socialMedia" src="socialMedia04.png"  alt="itchIoIcon">
           <p class= "detail" >My Itch.io</p>
         </a>
@@ -56,18 +63,33 @@
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-
-    <p class= "detail">Any questions to ask?</p>
-    <p class= "detail">Email: steveong2003@email.com</p>
+    <h2 data-aos="zoom-in">Contact</h2>
+    <p class= "detail" data-aos="flip-up">Any questions to ask?</p>
+    <p class= "detail" data-aos="flip-up">Email: steveong2003@email.com</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Stick.Journal</p>
   </footer>
-</body>
-</html>
 
+
+  <script>
+  $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: true
+    });
+  });
+</script>
+
+</body>
+
+<script>
+  AOS.init();
+</script>
+
+</html>
 
 
 
